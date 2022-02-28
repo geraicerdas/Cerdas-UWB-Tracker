@@ -27,17 +27,17 @@ find this line 165
 void DW1000Class::begin(uint8_t irq, uint8_t rst) {
 ```
 
-You will see this block line (173-175)
+You will see this block line (172-174)
 ```cpp
  #ifndef ESP8266
- 	SPI.usingInterrupt(digitalPinToInterrupt(irq)); // not every board support this, e.g. ESP8266
+ 	   SPI.usingInterrupt(digitalPinToInterrupt(irq)); // not every board support this, e.g. ESP8266
  #endif
 ```
 
 disable that block line, so the result will be like this :
 ```cpp
 // #ifndef ESP8266
-// 	SPI.usingInterrupt(digitalPinToInterrupt(irq)); // not every board support this, e.g. ESP8266
+// 	   SPI.usingInterrupt(digitalPinToInterrupt(irq)); // not every board support this, e.g. ESP8266
 // #endif
 ```
 - Now you can try an example sketches in this repo. Don't forget to select "ESP32 Dev Board" when uploading
