@@ -54,7 +54,7 @@ GND (top) should be 5V <br>
 GND (bottom) should be 3V3 <br>
 
 ## PCB and Parts
-If you want to make your self, just download the gerber file in production folder. Send it to your fav pcb manufacturer. And dont forget to get the Bill of materials :
+If you want to make the hardware yourself, just download the gerber file in production folder. Send it to your fav pcb manufacturer. And dont forget to get the Bill of materials :
 |Qty | Part Name | Parts | MPN |
 | ------------- |:-------------|:-------------| -----:|
 | 6 | Capacitor 100nF 0603 | C3, C5, C8, C9, C10, C12 | |
