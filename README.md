@@ -1,6 +1,7 @@
 ### Repository Content
 * **/firmware** : Arduino example codes (.ino)
 * **/hardware** : Schematic (.pdf)
+* **/images** : Images (.png)
 * **/production** : gerber file for pcb manufacturing (.zip)
 
 You can purchase this product from [![Generic badge](https://img.shields.io/badge/Indonesia-Tokopedia-<COLOR>.svg)](https://www.tokopedia.com/geraicerdas/cerdas-uwb-tracker-rtls-indoor-position-ultra-wideband-dw1000-dwm1000) 
@@ -41,6 +42,16 @@ disable that block line, so the result will be like this :
 // #endif
 ```
 - Now you can try an example sketches in this repo. Don't forget to select "ESP32 Dev Board" when uploading
+
+## Notice
+In the first version, there are some twisted silkscreen as shown in the image below 
+
+![image](images/Twisted%20Silkscreen%20Pins.png "Twisted Silkscreen")
+
+5V should be GND <br>
+GND (top) should be 5V <br>
+3V3 should be GND <br>
+GND (bottom) should be 3V3 <br>
 
 ## PCB and Parts
 If you want to make your self, just download the gerber file in production folder. Send it to your fav pcb manufacturer. And dont forget to get the Bill of materials :
