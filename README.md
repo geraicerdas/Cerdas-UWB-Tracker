@@ -8,7 +8,7 @@ You can purchase this product from [![Generic badge](https://img.shields.io/badg
 [![Generic badge](https://img.shields.io/badge/Worldwide-Unavailable-red.svg)](https://www.tindie.com/products/geraicerdas/cerdas-uwb-tracker/)
 
 # Cerdas UWB Tracker
-This is UWB DWM1000 Development Board with ESP32 as a main controller. It also compatible with BU01, the UWB module DW1000 from Ai-Thinker. As you know Ultra-Wide Band is a radio technology that can use a very low energy level for short-range, high-bandwidth communications over a large portion of the radio spectrum. Most recent applications target sensor data collection, precision locating and tracking applications. Some of high-end smartphones have used this technology.
+This is UWB DWM1000 Development Board with ESP32 as a main controller. It also compatible with BU01, the UWB module DW1000 from Ai-Thinker. As you know Ultra-Wide Band is a radio technology that can use a very low energy level for short-range, high-bandwidth communications over a large portion of the radio spectrum. Most recent applications target sensor data collection, precision locating and tracking applications. Some of high-end smartphones now support this technology.
 
 MCU + Wifi + Bluetooth + UWB in one devices. 
 
