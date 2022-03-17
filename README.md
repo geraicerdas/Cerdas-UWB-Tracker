@@ -5,15 +5,18 @@
 * **/production** : gerber file for pcb manufacturing (.zip)
 
 You can purchase this product from [![Generic badge](https://img.shields.io/badge/Indonesia-Tokopedia-<COLOR>.svg)](https://www.tokopedia.com/geraicerdas/cerdas-uwb-tracker-rtls-indoor-position-ultra-wideband-dw1000-dwm1000) 
-[![Generic badge](https://img.shields.io/badge/Worldwide-Unavailable-red.svg)](https://geraicerdas.com)
+[![Generic badge](https://img.shields.io/badge/Worldwide-Unavailable-red.svg)](https://www.tindie.com/products/geraicerdas/cerdas-uwb-tracker/)
 
 # Cerdas UWB Tracker
 This is UWB DWM1000 Development Board with ESP32 as a main controller. It also compatible with BU01, the UWB module DW1000 from Ai-Thinker. As you know Ultra-Wide Band is a radio technology that can use a very low energy level for short-range, high-bandwidth communications over a large portion of the radio spectrum. Most recent applications target sensor data collection, precision locating and tracking applications. Some of high-end smartphones have used this technology.
 
 MCU + Wifi + Bluetooth + UWB in one devices. 
-There are some additional features that has not been tested yet : 
-- 3xAA battery connector
-- SMT stackable header 2x13P
+
+<p float="left">
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/e9da7f10-681d-4bea-a63b-b9976f9db68b.jpg" width=400 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/5a515c82-3fa7-4b73-b818-e37272c1a642.jpg" width=400 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/9c192ba0-f1b4-4057-a05e-d9678923aef4.jpg" width=805 />
+</p>
 
 ## How To Use
 At least you will need two Cerdas UWB Tracker.
@@ -53,6 +56,14 @@ GND (top) should be 5V <br>
 3V3 should be GND <br>
 GND (bottom) should be 3V3 <br>
 
+## Development logs
+V1.2
+- Added battery charging functionality, so you can use this module with LiPo battery powered.
+- Change PCB color and fixing twisted silkscreen on pad 5V, 3.3V and GND
+
+V1.0
+- Initial design
+
 ## PCB and Parts
 If you want to make the hardware yourself, just download the gerber file in production folder. Send it to your fav pcb manufacturer. And dont forget to get the Bill of materials :
 |Qty | Part Name | Parts | MPN |
@@ -77,6 +88,8 @@ If you want to make the hardware yourself, just download the gerber file in prod
 | 2 | Transistor S8050 SOT-23 | Q1, Q2 | |
 | 1 | P-Mos SI2301 SOT-23 |Q4 | |
 | 1 | USB Type C SMT 16P | J1 | |
+
+Below is the first version of Cerdas UWB Tracker. We keep this for your references.
 
 <p float="left">
 <img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/b8c23ee2-33a5-4af8-ae1c-069759c55348.jpg" width=400 /> 
