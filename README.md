@@ -51,7 +51,7 @@ GND (bottom) should be 3V3 <br>
 
 ## Development logs
 V1.3
-- Added BNO080 IMU sensor manufactured by BOSCH
+- Added BNO080 High precision 9-DOF orientation IMU sensor manufactured by BOSCH
 
 V1.2
 - Added battery charging functionality, so you can use this module with LiPo battery powered.
