@@ -1,5 +1,5 @@
 ### Repository Content
-* **/firmware** : Arduino example codes (.ino)
+* **/Arduino Library** : Arduino library and example codes (.ino)
 * **/hardware** : Schematic (.pdf)
 * **/images** : Images (.png)
 * **/production** : gerber file for pcb manufacturing (.zip)
@@ -19,32 +19,25 @@ MCU + Wifi + Bluetooth + UWB in one devices.
 </p>
 
 ## How To Use
-At least you will need two Cerdas UWB Tracker.
+At least you will need two Cerdas UWB Tracker for TWR application. Or at least four for RTLS
 In the Arduino IDE, make sure :
 - you have installed ESP32 in the board manager
-- install library : [arduino-dw1000](https://github.com/thotro/arduino-dw1000) by Thotro
-- Edit code in DW1000.cpp
-
-find this line 165
-
-```cpp
-void DW1000Class::begin(uint8_t irq, uint8_t rst) {
-```
-
-You will see this block line (172-174)
-```cpp
- #ifndef ESP8266
- 	   SPI.usingInterrupt(digitalPinToInterrupt(irq)); // not every board support this, e.g. ESP8266
- #endif
-```
-
-disable that block line, so the result will be like this :
-```cpp
-// #ifndef ESP8266
-// 	   SPI.usingInterrupt(digitalPinToInterrupt(irq)); // not every board support this, e.g. ESP8266
-// #endif
-```
+- install Arduino DW1000 library manually : [UWB-Indoor-Localization_Arduino](https://github.com/jremington/UWB-Indoor-Localization_Arduino) by jremington. The
+[arduino-dw1000](https://github.com/thotro/arduino-dw1000) by Thotro is no longer maintained and doesn't have antenna delay calibration feature. So please use the modified Arduino-DW1000 library by jremington. Or you can download it in the Arduino Library in this repo and place it in your Arduino libraries folder.
 - Now you can try an example sketches in this repo. Don't forget to select "ESP32 Dev Board" when uploading
+
+To perform anchor calibration:
+- Set up a tag using the ESP32_UWB_setup_tag.ino Arduino code. The antenna delay parameter should be set to the library default.
+- Power up the tag and set it 7-8 m away from the anchor. Please take some measurement so it can more accurate.
+- Edit ESP32_anchor_autocalibrate.ino and replace variable "this_anchor_target_dist" with your measured distance
+```cpp
+float this_anchor_target_distance = 7.19;
+```
+- Upload ESP32_UWB_anchor_autocalibrate.ino to your anchor device and open Serial Monitor
+- Enter the reported anchor antenna delay to the ESP32_UWB_setup_anchor.ino code, specific for that anchor, and run that code to set up the anchor. Don't forget to set each anchor to have a unique anchor MAC address
+```cpp
+uint16_t Adelay = 16545;
+```
 
 ## Notice
 In the first version, there are some twisted silkscreen as shown in the image below 
@@ -57,6 +50,9 @@ GND (top) should be 5V <br>
 GND (bottom) should be 3V3 <br>
 
 ## Development logs
+V1.3
+- Added BNO080 IMU sensor manufactured by BOSCH
+
 V1.2
 - Added battery charging functionality, so you can use this module with LiPo battery powered.
 - Change PCB color and fixing twisted silkscreen on pad 5V, 3.3V and GND
