@@ -30,7 +30,8 @@ const uint8_t PIN_SS = 4;   // spi select pin
 
 
 char this_anchor_addr[] = "84:00:22:EA:82:60:3B:9C";
-float this_anchor_target_distance = 296*0.0254; //measured distance to anchor in m
+// change this value to the actual distance of your devices
+float this_anchor_target_distance = 7.14; //measured distance to anchor in m
 
 uint16_t this_anchor_Adelay = 16600; //starting value
 uint16_t Adelay_delta = 100; //initial binary search step size
@@ -55,6 +56,11 @@ void setup()
   DW1000Ranging.attachInactiveDevice(inactiveDevice);
   //Enable the filter to smooth the distance
   //DW1000Ranging.useRangeFilter(true);
+  
+  //DM1000 indicator LED
+  DW1000.enableDebounceClock();
+  DW1000.enableLedBlinking();
+  DW1000.setGPIOMode(MSGP0, LED_MODE);
 
   //start the module as anchor, don't assign random short address
   DW1000Ranging.startAsAnchor(this_anchor_addr, DW1000.MODE_LONGDATA_RANGE_LOWPOWER, false);
@@ -97,6 +103,11 @@ void newRange()
   
   Serial.print(", Adelay = ");
   Serial.println (this_anchor_Adelay);
+  
+  Serial.println("You can also manually edit your ESP32_UWB_setup_anchor.ino");
+  Serial.print("uint16_t Adelay = 16545"); Serial.println(this_anchor_Adelay);
+  Serial.print("float dist_m ="); Serial.println(this_anchor_target_distance);
+                 
 //  DW1000Ranging.initCommunication(PIN_RST, PIN_SS, PIN_IRQ); //Reset, CS, IRQ pin
   DW1000.setAntennaDelay(this_anchor_Adelay);
 }
