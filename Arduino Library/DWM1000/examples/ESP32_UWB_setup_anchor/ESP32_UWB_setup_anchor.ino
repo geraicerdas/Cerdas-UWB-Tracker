@@ -53,6 +53,11 @@ void setup()
   DW1000Ranging.attachNewRange(newRange);
   DW1000Ranging.attachNewDevice(newDevice);
   DW1000Ranging.attachInactiveDevice(inactiveDevice);
+  
+  //DM1000 indicator LED
+  DW1000.enableDebounceClock();
+  DW1000.enableLedBlinking();
+  DW1000.setGPIOMode(MSGP0, LED_MODE);  
 
   //start the module as an anchor, do not assign random short address
   DW1000Ranging.startAsAnchor(anchor_addr, DW1000.MODE_LONGDATA_RANGE_LOWPOWER, false);
