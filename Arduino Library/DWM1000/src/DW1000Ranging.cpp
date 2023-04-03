@@ -151,6 +151,9 @@ void DW1000RangingClass::generalStart() {
 		Serial.println(msg);
 	}
 	
+	// Thanks to Makerfabs
+	// For large power module - Cerdas UWB Xtreme Tracker
+	DW1000.large_power_init();
 	
 	// anchor starts in receiving mode, awaiting a ranging poll message
 	receiver();

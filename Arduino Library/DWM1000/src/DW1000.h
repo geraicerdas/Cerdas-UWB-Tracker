@@ -313,6 +313,13 @@ public:
 	// transmission state
 	static void newTransmit();
 	static void startTransmit();
+
+
+	// Thanks to Makerfabs
+	// For large power module - Cerdas UWB Xtreme Tracker
+	static void large_power_init();
+	
+	
 	
 	/* ##### Operation mode selection ############################################ */
 	/** 
