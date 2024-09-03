@@ -1,6 +1,7 @@
 ### Repository Content
 * **/Arduino Library** : Arduino library and example codes (.ino)
 * **/GUI Visualization** : GUI Visualization of Anchor and Tags
+* **/firmware** : Sample Arduino codes
 * **/hardware** : Schematic (.pdf)
 * **/images** : Images (.png)
 * **/production** : gerber file for pcb manufacturing (.zip)
