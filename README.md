@@ -137,16 +137,16 @@ Below is the previous version of Cerdas UWB Tracker. We keep this for your refer
 
 Version 1.2
 <p float="left">
-<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/e9da7f10-681d-4bea-a63b-b9976f9db68b.jpg" width=280 /> 
-<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/5a515c82-3fa7-4b73-b818-e37272c1a642.jpg" width=280 /> 
-<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/9c192ba0-f1b4-4057-a05e-d9678923aef4.jpg" width=280 />
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/e9da7f10-681d-4bea-a63b-b9976f9db68b.jpg" width=260 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/5a515c82-3fa7-4b73-b818-e37272c1a642.jpg" width=260 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2022/3/17/9c192ba0-f1b4-4057-a05e-d9678923aef4.jpg" width=260 />
 </p>
 
 Version 1.0
 <p float="left">
-<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/b8c23ee2-33a5-4af8-ae1c-069759c55348.jpg" width=280 /> 
-<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/65ec234b-f2c5-4a26-9dda-c24ea03e2e98.jpg" width=280 /> 
-<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/12cd5dc7-a15d-48c4-a1e5-93ea75a33cd2.jpg" width=280 />
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/b8c23ee2-33a5-4af8-ae1c-069759c55348.jpg" width=260 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/65ec234b-f2c5-4a26-9dda-c24ea03e2e98.jpg" width=260 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2021/12/24/12cd5dc7-a15d-48c4-a1e5-93ea75a33cd2.jpg" width=260 />
 </p>
 
 # Notice
