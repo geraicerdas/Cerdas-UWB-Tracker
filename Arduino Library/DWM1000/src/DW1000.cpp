@@ -102,8 +102,9 @@ const byte DW1000Class::BIAS_900_16[] = {137, 122, 105, 88, 69, 47, 25, 0, 21, 4
 const byte DW1000Class::BIAS_900_64[] = {147, 133, 117, 99, 75, 50, 29, 0, 24, 45, 63, 76, 87, 98, 116, 122, 132, 142};
 */
 // SPI settings
-#ifdef ESP8266
+#if defined(ESP8266) || defined(CONFIG_IDF_TARGET_ESP32S3)
 	// default ESP8266 frequency is 80 Mhz, thus divide by 4 is 20 MHz
+	// ESP32-S3 works normal with 20Mhz SPI clock, otherwise will send random responses
 	const SPISettings DW1000Class::_fastSPI = SPISettings(20000000L, MSBFIRST, SPI_MODE0);
 #else
 	const SPISettings DW1000Class::_fastSPI = SPISettings(16000000L, MSBFIRST, SPI_MODE0);
