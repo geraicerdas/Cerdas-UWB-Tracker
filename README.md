@@ -14,16 +14,23 @@ You can purchase this product from [![Generic badge](https://img.shields.io/badg
 Ultra-Wideband (UWB) is a radio technology that enables precise real-time location tracking and high-bandwidth communication over short distances. It uses low-power pulses across a wide spectrum, making it ideal for applications requiring accuracy (centimeter-level), security, and resistance to interference.
 
 ### Cerdas UWB Tracker
-The Cerdas UWB Tracker is a versatile, open-source hardware platform built around the ESP32-S3 microcontroller. It supports two UWB modules (DWM1000 for 20-meter range and a long-range variant for 200 meters), enabling applications like asset tracking, indoor navigation, and IoT connectivity. With BLE, Wi-Fi, and expandable I/O, it’s designed for developers, makers, and researchers to build scalable location-aware systems.
+<p float="left">
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2025/2/13/b845beab-94e7-455c-81f1-a0988bd25b73.jpg" width=400 /> 
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2025/2/13/7eede69a-1164-43b9-aa7f-a2fbfa0bbd57.jpg" width=400 /> 
+</p>
 
-[image here. to be updated]
+The Cerdas UWB Tracker is a versatile, open-source hardware platform built around the ESP32-S3 microcontroller. It supports two UWB modules (DWM1000 for 20-meter range and a long-range variant for 120 meters), enabling applications like asset tracking, indoor navigation, and IoT connectivity. With BLE, Wi-Fi, and expandable I/O, it’s designed for developers, makers, and researchers to build scalable location-aware systems.
 
-# Key Features
-### Hardware Features
+# Hardware Features
+<p float="left">
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2025/2/13/b9284a35-eea7-49f4-b5a5-13cdf5e0dcd6.jpg" width=400 />
+<img src="https://images.tokopedia.net/img/cache/900/VqbcmM/2025/2/13/cce6fec9-7b46-4dcc-bc91-f9893d03360c.jpg" width=400 />
+</p>
+
 - Core: ESP32-S3 with dual-core 240 MHz CPU, BLE 5.0, and Wi-Fi 4.
 -  UWB Connectivity:
-    - DWM1000 Version: ~20-meter range, ideal for prototyping and indoor use.
-    - Long-Range Version: ~200-meter range for outdoor/industrial environments.
+    - DWM1000 Version: ~20-meters range, ideal for prototyping and indoor use.
+    - Long-Range Version: ~120-meters range for outdoor/industrial environments.
 - Power Options:
   - USB-C for programming and power.
   - LiPo battery connector for portable use.
@@ -39,12 +46,12 @@ The Cerdas UWB Tracker is a versatile, open-source hardware platform built aroun
 |Parameter | Details  |
 | ------------- | :-----|
 |MCU | ESP32-S3 (Wi-Fi 4, BLE 5.0, 512KB SRAM, 320KB ROM)|
-|UWB Module	| DWM1000 (20m) or Long-Range Variant (200m)|
+|UWB Module	| DWM1000 (20m) or Long-Range Variant (120m)|
 |Wireless	| Wi-Fi 4 (802.11 b/g/n), Bluetooth Low Energy 5.0|
 |I/O Interfaces	| 2x Qwiik (Serial + I2C), USB-C|
 |Power Input	| 5V via USB-C or 3.7V LiPo battery|
 |Optional Sensors	| BNO080 (IMU), RV3028 (RTC) – unpopulated by default|
-|PCB Size	| [To be updated]|
+|PCB Size	| 66x41mm|
 
 # Getting Started
 ### 1. Installation
