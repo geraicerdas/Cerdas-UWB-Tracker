@@ -63,6 +63,9 @@ The Cerdas UWB Tracker is a versatile, open-source hardware platform built aroun
   Please see the Arduino example code. Choose "ESP32S3 Dev Module" as your board
 - At least you will need two Cerdas UWB Tracker for TWR application. Or at least four for RTLS
 
+  ![UWB Three Anchor Visualization](https://github.com/user-attachments/assets/386eb665-07bf-41d6-8d48-333e2b5612a0)
+
+
 ### 2. Basic Usage
 - Power On: Use the slide switch to turn the board on.
 - To turn on or off your UWB Module you can use GPIO5 to do that.
