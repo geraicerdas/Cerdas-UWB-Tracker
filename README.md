@@ -56,19 +56,21 @@ The Cerdas UWB Tracker is a versatile, open-source hardware platform built aroun
 # Getting Started
 ### 1. Installation
 - Install required libraries for DWM1000\
-  Please only use this modified DW1000 library in this repo and put it in your Arduino IDE. This library support ESP32-S3 already
+  Please only use this modified DW1000 library in this repo and put it manually in your Arduino IDE (copy the DW1000 folder into your Arduino libraries folder). This library support ESP32-S3 already
 - Prepare your board in Programming mode\
-  Press and hold IO0 button and then short press EN button, after that release IO0 button. Your computer will recognize the board, please check in Device Manager.
+  Connect your board to your computer, and then press and hold IO0 button and then short press EN button, after that release IO0 button. Your computer will recognize the board, please check in Device Manager.
 - Program the board via the USB-C port using Arduino IDE.\
   Please see the Arduino example code. Choose "ESP32S3 Dev Module" as your board
 - At least you will need two Cerdas UWB Tracker for TWR application. Or at least four for RTLS
 
 ### 2. Basic Usage
 - Power On: Use the slide switch to turn the board on.
+- To turn on or off your UWB Module you can use GPIO5 to do that.
 
 ### 3. Battery Tips
 - Use a 3.7V LiPo battery (500–2000mAh recommended).
 - Enable low-power modes in firmware to extend battery life.
+- Turn off UWB module if not in use
 
 # Advanced Usage
 ### Populating Optional Sensors
